@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Install MongoDB') {
             steps {
-                ansiblePlaybook credentialsId: 'b6c8a92a-c3a5-4839-b2bb-ebb092311edb', disableHostKeyChecking: true, installation: 'ansible', inventory: 'aws_ec2.yml', playbook: 'playbook.yml', vaultTmpPath: ''
+                ansiblePlaybook credentialsId: '7b5a1390-1039-476e-815e-e0fdc566328c', disableHostKeyChecking: true, installation: 'ansible', inventory: 'aws_ec2.yml', playbook: 'playbook.yml', vaultTmpPath: ''
             }
         }
     }
